@@ -1,0 +1,24 @@
+ <body>
+    
+	<script>
+    var arr=[];    
+    function add() {	
+	  for (let i = 0; i < 5; i++) {
+                        var ref = window.open("https://www.google.com");
+                        arr.push(ref);
+                        
+        }          
+        }
+        
+        function del() {
+         for (var i = 0; i < 5; i++) {
+                       arr[i].close();       
+        }
+		}
+        
+    </script>
+	
+  &nbsp &nbsp  &nbsp &nbsp <button id ="add" onclick="add()">start</button><br>
+  &nbsp &nbsp &nbsp &nbsp   <button id ="sub" onclick="del()">Stop</button><br><br>
+   </body>
+    

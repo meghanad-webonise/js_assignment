@@ -1,0 +1,17 @@
+<html><script>
+let arr=prompt()
+let arr2=[]
+arr=arr.split(',')
+arr=arr.sort();
+count={};
+for(let i=0;i<arr.length;i++){
+	let num=arr[i];
+	count[num]=count[num] ? count[num]+1:1;
+
+}
+Object.entries(count).forEach(([key, value]) => {
+   document.write(key,': ', value,'  ');
+ 
+});
+</script>
+</html>

@@ -1,0 +1,30 @@
+ <body>
+   <form name="form1" >
+  
+            <label> Name : </label> 
+        <input id="name" type="text"  required> <input id="email" type="email"  pattern=".+@globex.com" >      
+        <button type="submit" onclick="add()">Submit</button>
+        <button " type="button" onclick="show()">Show User</button>
+   
+    </form>
+	<script>
+	function add()
+	{
+		var obj = new Object();
+		var date = new Date();
+		obj.time = date.toLocaleString();
+		obj.name = document.getElementById("name").value;
+		obj.email = document.getElementById("email").value;
+		sessionStorage.setItem('obj', JSON.stringify(obj));
+	}
+	function show()
+	{
+		var retrievedObject = sessionStorage.getItem('obj');	
+		console.log(retrievedObject);
+	}
+	        
+    </script>
+	
+	
+   </body>
+    
