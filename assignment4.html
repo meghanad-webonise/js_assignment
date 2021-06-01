@@ -2,7 +2,7 @@
    <form name="form1" >
   
             <label> Name : </label> 
-        <input id="name" type="text"  required> <input id="email" type="email"  pattern=".+@globex.com" >      
+        <input id="name" type="text"  required> <input id="email" type="email"  required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" >      
         <button type="submit" onclick="add()">Submit</button>
         <button " type="button" onclick="show()">Show User</button>
    
