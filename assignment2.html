@@ -1,0 +1,26 @@
+ <body>
+    <input type=text  id = "ip1" >     <input type=text id = "ip2"  >
+    <button id ="add" onClick="addition()">Addition</button><br>
+    <button id ="sub" onClick="subtraction()">Substraction</button><br><br>
+    <label id="op" >Result</label>
+        </body>
+    <script>
+        
+    function addition() {	
+		let input1 = document.getElementById("ip1").value
+		let input2 = document.getElementById("ip2").value;
+		let res=parseInt(input1)+parseInt(input2)
+	
+		document.getElementById("op").innerHTML = 'sum is '+(parseInt(input1) + parseInt(input2));
+        }
+        
+        function subtraction() {
+        let input1 = document.getElementById("ip1").value;
+        let input2 = document.getElementById("ip2").value;
+		let res=parseInt(input1)+parseInt(input2)
+	
+		document.getElementById("op").innerHTML = 'diff is '+(parseInt(input1) -parseInt(input2));
+                
+        }
+        
+    </script>
